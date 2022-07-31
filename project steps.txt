@@ -1,0 +1,58 @@
+1- install laravel project
+    composer create-project laravel/laravel kanban
+
+2- git command for project
+    git init // for create an empty git
+    git config --global user.name //set name
+    git config --global user.email   //set email
+    git clone https://github.com/NursaidNart/kanban.git // download from source
+    git remote add origin  https://github.com/NursaidNart/kanban.git // git add source url for git
+    git remote set-url origin git@github.com:NursaidNart/kanban.git  // set source url for git
+    git add . //add all changes
+    git commit -m 'Initial' //save changes with comment
+    git branch master // create new branch named master
+    git push origin master  //push master branch to repo
+    git push -u origin master-#1 //create new branch to repo and push
+    git stash //save changes not for git only local
+    git stash pop // get saved changes
+    git status // show branch changes
+    git branch // show git branch list in local
+    git branch -r // show git branch list in repo
+    git branch -v // show git branch list with comment
+    git fetch //get checking repo for changes
+    git pull origin master // get branch from repo
+    git checkout master  // change branch
+    git checkout . // delete change in branch
+    git clean -df  // delete change in branch with files
+    git branch --delete master-2 // delete branch in local
+
+3- requirement packages and install
+    npm install vue-router vue-axios --save // vue router and axios
+    npm install @vitejs/plugin-vue // vite vue
+    npm install bootstrap //bootstrap
+    npm install && npm run dev  // install and run
+    // gave an error because nodejs version is 12
+    // install nodejs version 18
+    curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+    sudo apt-get install nodejs
+    //but not installed I do not know why it happened
+    // install with nvm
+    wget https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh
+    bash install.sh //install nvm
+    source ~/.bashrc
+    nvm -v //nvm version
+    nvm list-remote
+    nvm install node // install node
+    nvm install v18 // install node
+    nvm use 18
+    node -v // nodejs version
+    npm -v // npm version
+    // now run project
+    npm run build // run project
+    npm run dev // run project
+    // add bootstrap
+    composer require laravel/ui
+    php artisan ui bootstrap
+    – show-current
+
+
