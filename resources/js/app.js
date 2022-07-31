@@ -1,4 +1,6 @@
 import './bootstrap';
+import '../sass/app.scss'
+
 
 import App from './components/App.vue';
 import VueAxios from 'vue-axios';
@@ -6,6 +8,8 @@ import axios from 'axios';
 import { routes } from './routes';
 import * as VueRouter from 'vue-router';
 import * as Vue from 'vue'
+import * as bootstrap from 'bootstrap'
+
 
 
 const router =  VueRouter.createRouter({
